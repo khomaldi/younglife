@@ -1,0 +1,78 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Всегда показываем вертикальную полосу прокрутки */
+html {
+  min-height: 101%;
+}
+
+body {
+  margin: 0;
+  color: #000;
+  text-align: left;
+  font-size: 1em;
+  min-height: 100%;
+  font-family: 'Roboto', sans-serif !important;
+  line-height: normal !important;
+  background-color: #f9f9f9;
+}
+
+/* Порядок правил для ссылок имеет значение */
+a,
+a:visited {
+  color: #222;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  text-decoration:none;
+}
+a:focus,
+a:active {
+  color: #c83867;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'PT Serif', serif !important;
+  font-weight: normal !important;
+}
+
+strong {
+  font-size: 22px;
+}
+
+img {
+  display: block;
+  height: auto;
+	width: 100%;
+}
+
+/* START footer */
+.footer {
+  background: rgb(107,107,107);
+  text-align: center;
+  padding: 20px 0px 10px 0px;
+  color: white;
+  margin-top: 20px;
+}
+.footer p {
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+.footer-logo {
+  width: 242px;
+  margin: 0 auto;
+}
+
+.copyright {
+  font-size: 8px;
+  margin: 10px 0px 10px 0px;
+}
+/* END footer */
