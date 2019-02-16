@@ -22,29 +22,59 @@ require_once('core/main.php');
   <link href="/css/younglife.css" rel="stylesheet">
   <link href="/blocks/header/header.css" rel="stylesheet">
   <link href="/blocks/footer/footer.css" rel="stylesheet">
+  <link href="/blocks/map/map.css" rel="stylesheet">
+  <link href="/blocks/banners/banners.css" rel="stylesheet">
 
   <!-- JavaScript Files -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://younglife.ge/js/younglife.js"></script>
 
-  <!-- Required links -->
+  <!-- Fonts links -->
   <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="//younglife/css/fonts/bpg-nino-mtavruli/css/bpg-nino-mtavruli.min.css">
+  <link rel="stylesheet" href="//younglife/css/fonts/bpg-rioni/css/bpg-rioni.min.css">
 </head>
 <body>
 <?php
-//Try to include <includes.php>
+//Try to include <includes-before-content.php>
 try {
-  if (!@include_once($rootFolder . 'core/includes.php')) {
-    throw new Exception('Can\'t open file <includes.php>');
+  if (!@include_once($rootFolder . 'core/includes-before-content.php')) {
+    throw new Exception('Can\'t open file &lt;includes-before-content&gt;');
   }
 } catch (Exception $e) {
   echo $e->getMessage();
 }
 ?>
-  <script src="https://younglife.ge/js/imageMapResizer.js"></script>
-  <script src="https://younglife.ge/js/mapsToolTips.js"></script>
-  <script>
-       $('map').imageMapResize() ;
-  </script>
+<?php
+//Try to include <map.tpl>
+try {
+  if (!@include_once($rootFolder . 'blocks/map/map.tpl')) {
+    throw new Exception('Can\'t open file &lt;map.tpl&gt;');
+  }
+} catch (Exception $e) {
+  echo $e->getMessage();
+}
+?>
+<?php
+//Try to inclide <banners.tpl>
+try {
+  if (!@include_once($rootFolder . 'blocks/banners/banners.tpl')) {
+    throw new Exception('Can\'t open file &lt;banners.tplgt;');
+  }
+ } catch (Exception $e) {
+    echo $e->getMessage();
+}
+?>
+<?php
+//Try to include <includes-after-content.php>
+try {
+  if (!@include_once($rootFolder . 'core/includes-after-content.php')) {
+    throw new Exception('Can\'t open file &lt;includes-after-content&gt;');
+  }
+} catch (Exception $e) {
+  echo $e->getMessage();
+}
+?>
+  <script src="/blocks/map/map.js"></script>
 </body>
 </html>
