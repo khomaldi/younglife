@@ -21,6 +21,7 @@ require_once('core/main.php');
   <!-- CSS Files -->
   <link href="/css/younglife.css" rel="stylesheet">
   <link href="/blocks/header/header.css" rel="stylesheet">
+  <link href="/blocks/footer/footer.css" rel="stylesheet">
 
   <!-- JavaScript Files -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -31,40 +32,14 @@ require_once('core/main.php');
 </head>
 <body>
 <?php
-//Try to include header
+//Try to include <includes.php>
 try {
-  require_once($rootFolder . 'blocks/header/header.tpl');
+  if (!@include_once($rootFolder . 'core/includes.php')) {
+    throw new Exception('Can\'t open file <includes.php>');
+  }
 } catch (Exception $e) {
-  echo 'Can\'t open file "header.tpl"';
+  echo $e->getMessage();
 }
-
-//Try to include map.tpl
-/* try {
-  require_once($rootFolder . 'blocks/map-on-index/map.tpl');
-} catch (Exception $e) {
-  echo 'Can\'t open file "map.tpl"';
-} */
-
-/* //Try to include three-banners.tpl
-try {
-  require_once($rootFolder . 'blocks/map-on-index/three-banners.tpl');
-} catch (Exception $e) {
-  echo 'Can\'t open file "three-banners.tpl"';
-}
-
-//Try to include about.tpl
-try {
-  require_once($rootFolder . 'blocks/map-on-index/about.tpl');
-} catch (Exception $e) {
-  echo 'Can\'t open file "about.tpl"';
-}
-
-//Try to include footer.tpl
-try {
-  require_once($rootFolder . 'blocks/footer/footer.tpl');
-} catch (Exception $e) {
-  echo 'Can\'t open file "footer.tpl"';
-} */
 ?>
   <script src="https://younglife.ge/js/imageMapResizer.js"></script>
   <script src="https://younglife.ge/js/mapsToolTips.js"></script>
