@@ -1,6 +1,7 @@
+<script src="<?php $rootFolder ?>/blocks/header/header.js"></script>
 <header class="header">
   <div class="header__logo">
-    <a href="#"><img src="https://younglife.ge/img/logo_header_195x38.png" alt="Young Life"></a>
+    <a href="#"><img src="https://younglife.ge/images/logo/logo_header_195x38.png" alt="Young Life"></a>
   </div>
   <nav class="navigation">
     <ul class="navigation__menu">
@@ -32,4 +33,3 @@
   </div>
   <a href="#" class="header__toggle"><img class="toggle__img" src="https://younglife.ge/img/nav-icon.png" alt="show"></a>
 </header>
-<script src="http://younglife/blocks/header/header.js"></script>
