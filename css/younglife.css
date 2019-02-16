@@ -50,29 +50,5 @@ strong {
 img {
   display: block;
   height: auto;
-	width: 100%;
+  width: 100%;
 }
-
-/* START footer */
-.footer {
-  background: rgb(107,107,107);
-  text-align: center;
-  padding: 20px 0px 10px 0px;
-  color: white;
-  margin-top: 20px;
-}
-.footer p {
-  font-size: 12px;
-  margin-top: 15px;
-}
-
-.footer-logo {
-  width: 242px;
-  margin: 0 auto;
-}
-
-.copyright {
-  font-size: 8px;
-  margin: 10px 0px 10px 0px;
-}
-/* END footer */
