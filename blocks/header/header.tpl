@@ -32,5 +32,6 @@
   </div>
   <a href="#" class="header__toggle"><img class="toggle__img" src="https://younglife.ge/img/nav-icon.png" alt="show"></a>
 </header>
+<div class="header-invisible-clone"></div>
 <script src="<?php $rootFolder ?>/blocks/header/header.js"></script>
 

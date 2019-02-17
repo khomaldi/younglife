@@ -37,3 +37,14 @@ $(function () {
     }
   });
 });
+
+/* Changing size of .header-invisible-clone */
+$(document).ready(function () {
+  var height = $('.header').outerHeight() + 15;
+  $('.header-invisible-clone').css('height', height + 'px');
+});
+
+$(window).resize(function () {
+  var height = $('.header').outerHeight() + 15;
+  $('.header-invisible-clone').css('height', height + 'px');
+});
