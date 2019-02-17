@@ -4,7 +4,7 @@ require_once('core/main.php');
 <!DOCTYPE html>
 <html lang="ka">
 <head>
-  <!-- Website title -->
+  <!-- Title -->
   <title>Young Life საქართველო</title>
 
   <!-- Meta -->
@@ -15,31 +15,23 @@ require_once('core/main.php');
   <meta property="og:title" content="Young Life საქართველო">
   <meta property="og:image" content="https://younglife.ge/img/big_logo_og.jpg">
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="https://younglife.ge/images/favicon.ico" type="image/x-icon">
+<?php
+//Try to include <includes-head.tpl>
+try {
+  if (!@include_once($rootFolder . 'includes/includes-head.tpl')) {
+    throw new Exception('Can\'t open file &lt;includes-head.tpl&gt;');
+  }
+} catch (Exception $e) {
+  echo $e->getMessage();
+}
+?>
 
-  <!-- CSS Files -->
-  <link href="/css/younglife.css" rel="stylesheet">
-  <link href="/blocks/header/header.css" rel="stylesheet">
-  <link href="/blocks/footer/footer.css" rel="stylesheet">
-  <link href="/blocks/map/map.css" rel="stylesheet">
-  <link href="/blocks/banners/banners.css" rel="stylesheet">
-  <link href="/blocks/about/about.css" rel="stylesheet">
-
-  <!-- JavaScript Files -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://younglife.ge/js/younglife.js"></script>
-
-  <!-- Fonts links -->
-  <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="//younglife/css/fonts/bpg-nino-mtavruli/css/bpg-nino-mtavruli.min.css">
-  <link rel="stylesheet" href="//younglife/css/fonts/bpg-rioni/css/bpg-rioni.min.css">
 </head>
 <body>
 <?php
 //Try to include <includes-before-content.php>
 try {
-  if (!@include_once($rootFolder . 'core/includes-before-content.php')) {
+  if (!@include_once($rootFolder . 'includes/includes-before-content.php')) {
     throw new Exception('Can\'t open file &lt;includes-before-content&gt;');
   }
 } catch (Exception $e) {
@@ -79,7 +71,7 @@ try {
 <?php
 //Try to include <includes-after-content.php>
 try {
-  if (!@include_once($rootFolder . 'core/includes-after-content.php')) {
+  if (!@include_once($rootFolder . 'includes/includes-after-content.php')) {
     throw new Exception('Can\'t open file &lt;includes-after-content&gt;');
   }
 } catch (Exception $e) {
