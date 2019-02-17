@@ -36,8 +36,8 @@
   </div>
   <div class="footer__bottom">
     <img class="bottom__logo" src="https://younglife.ge/images/logo/logo_footer_242x48.png">
-    <p class="bottom__copyright">© 2014 &mdash; 2019 Young Life საქართველო</p>
-    <p class="bottom__reserved-rights">ყველა უფლება დაცულია</p>
+    <p class="bottom__copyright">© 2014 &mdash; 2019 Young Life <span class="geo-font">საქართველო</span></p>
+    <p class="bottom__reserved-rights geo-font">ყველა უფლება დაცულია</p>
     <p class="bottom__thanks">Icons made by <a href="http://www.freepik.com" title="Freepik" target="_blank">Freepik</a> from <a
         href="https://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com</a> is licensed by <a
         href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
