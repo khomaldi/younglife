@@ -22,11 +22,11 @@
   padding: 12px 15px;
 }
 
-.banners__first { background-color: #65CB00; }
+.banners__first { background-color: #65bf00; } /* 65CB00 */
 
-.banners__second { background-color: #FF6600; }
+.banners__second { background-color: #ff5a00; } /* FF6600 */
 
-.banners__third{ background-color: #1C6BA4; }
+.banners__third{ background-color: #1c5fa4; } /* 1C6BA4 */
 
 @media screen and (max-width: 1090px) {
   .banners__banner {
