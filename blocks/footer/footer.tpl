@@ -30,8 +30,9 @@
     </div>
     <div class="links__column">
       <p class="links__title">CONNECT WITH US</p>
-      <a class="links__social" href="https://www.facebook.com/groups/younglife" title="Facebook" target="_blank"><img src="http://younglife/images/logo/facebook.png" alt="Facebook"></a>
-      <a class="links__social" href="https://www.instagram.com/younglifege/" title="Instagram" target="_blank"><img src="http://younglife/images/logo/instagram.png" alt="Instagram"></a>
+      <a class="links__social" href="https://www.facebook.com/groups/younglife" title="Facebook" target="_blank"><img src="https://younglife.ge/images/logo/facebook.png" alt="Facebook"></a>
+      <a class="links__social" href="https://www.instagram.com/younglifege/" title="Instagram" target="_blank"><img src="https://younglife.ge/images/logo/instagram.png" alt="Instagram"></a>
+      <a class="links__social" href="https://github.com/khomaldi/younglife" title="GitHub" target="_blank"><img class="link__social_github" src="https://younglife.ge/images/logo/github.png" alt="GitHub"></a>
     </div>
   </div>
   <div class="footer__bottom">

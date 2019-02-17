@@ -67,6 +67,16 @@
           filter: grayscale(0%);
 }
 
+.link__social_github {
+  opacity: 0.5;
+  border-radius: 7px;
+  -webkit-transition: all 0.4s ease-in-out;
+       -o-transition: all 0.4s ease-in-out;
+          transition: all 0.4s ease-in-out;
+}
+
+.link__social_github:hover { opacity: 1; }
+
 .footer__bottom {
   padding-top: 20px;
   text-align: center;
