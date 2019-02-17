@@ -43,6 +43,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal !important;
 }
 
+.bold { font-weight: bold; }
 .geo-font-mtavruli { font-family: "BPG Nino Mtavruli", sans-serif; }
 
 .geo-font { font-family: "BPG Rioni", sans-serif; }
