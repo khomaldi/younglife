@@ -7,6 +7,7 @@
 </div>
 <div class="slider width--65">
   <ul class="slider__list">
+    <li class="list__item"><img class="item__image" src="https://younglife.ge/blocks/clubs/rustavi/images/008.jpg" alt=""></li>
     <li class="list__item"><img class="item__image" src="https://younglife.ge/blocks/clubs/rustavi/images/001.jpg" alt=""></li>
     <li class="list__item"><img class="item__image" src="https://younglife.ge/blocks/clubs/rustavi/images/002.jpg" alt=""></li>
     <li class="list__item"><img class="item__image" src="https://younglife.ge/blocks/clubs/rustavi/images/003.jpg" alt=""></li>
