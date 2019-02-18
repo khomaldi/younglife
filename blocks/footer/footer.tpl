@@ -1,3 +1,4 @@
+<div class="footer-invisible"></div>
 <footer class="footer">
   <div class="footer__links">
     <div class="links__column">
@@ -7,25 +8,17 @@
         <li><a class="links__link" href="http://staff.younglife.org/" target="_blank">staff.younglife.org</a></li>
         <li><a class="links__link" href="http://www.younglifestore.com" target="_blank">younglifestore.com</a></li>
         <li><a class="links__link" href="https://giving.younglife.org" target="_blank">giving.younglife.org</a></li>
-        <li><a class="links__link" href="https://camp.younglife.org" target="_blank">ბანაკების საიტები</a></li>
+        <li><a class="links__link" href="https://camp.younglife.org" target="_blank">camps websites</a></li>
         <li><a class="links__link" href="https://www.younglife.org/Locator/Pages/Young-Life-Local.aspx" target="_blank">local websites</a></li>
       </ul>
     </div>
     <div class="links__column">
       <p class="links__title">RESOURCES</p>
       <ul class="links__list">
-        <li><a class="links__link" href="https://staff.younglife.org" target="_blank">Staff, Leader and Committee</a></li>
+        <li><a class="links__link" href="https://www.younglife.org/About/Pages/Young-Life-General-FAQs.aspx">Q&A</a></li>
         <li><a class="links__link" href="https://www.younglife.org/Foundation/" target="_blank">Young Life Foundation</a></li>
         <li><a class="links__link" href="https://www.younglife.org/Forward" target="_blank">Forward</a></li>
         <li><a class="links__link" href="https://www.younglife.org/PressRoom/" target="_blank">Press Room</a></li>
-      </ul>
-    </div>
-    <div class="links__column">
-      <p class="links__title">ADDITIONAL LINKS</p>
-      <ul class="links__list">
-        <li><a class="links__link" href="https://www.younglife.org/Jobs/">Job Opportunities</a></li>
-        <li><a class="links__link" href="https://www.younglife.org/About/Pages/Young-Life-General-FAQs.aspx">FAQs</a></li>
-        <li><a class="links__link" href="https://www.younglife.org/Pages/Contact.aspx">Contact</a></li>
       </ul>
     </div>
     <div class="links__column">
