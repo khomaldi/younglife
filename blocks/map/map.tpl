@@ -1,5 +1,5 @@
 <div class="map">
-  <img class="map__image" src="https://younglife.ge/img/map.png" alt="Young Life Georgia Map" usemap="#map__areas">
+  <img class="map__image" src="https://younglife.ge/images/map.png" alt="Young Life Georgia Map" usemap="#map__areas">
   <map name="map__areas">
     <area id="Tbilisi" class="areas_area" shape="poly"
       coords="1805.5,520,1774.5,529,1748.5,555,1744.5,586,1750.5,606,1765.5,627,1783.5,637,1798.5,643,1786.5,700,1790.5,708,1802.5,702,1820.5,681,1838.5,660,1856.5,628,1870.5,577,1850.5,537,1828.5,523"
@@ -12,18 +12,18 @@
       href="https://younglife.ge/pages/clubs/marneuli.php" target="_blank">
   </map>
   <div class="map__info map__tbilisi">
-    <p><b>მისამართი</b>: კარგარეთელის #9 (ოფისი "cartwheels")</p>
-    <p><b>დრო</b>: ორშაბათი в 17:00</p>
-    <p><b>კონტაქტი</b>: +995-598-78-27-32</p>
+    <span class="geo-font"><b>მისამართი</b>: კარგარეთელის</span> #9 (ოფისი "cartwheels")
+    <br><span class="geo-font"><b>დრო</b>: ორშაბათი</span> 17:00
+    <br><span class="geo-font"><b>კონტაქტი</b>:</span> +995-598-78-27-32</p>
   </div>
   <div class="map__info map__rustavi">
-    <p><b>მისამართი</b>: მესხიშვილის მე-2 გასასვლელი, მე-8 კორპუსის მიმდებარე ტერიტორია</p>
-    <p><b>დრო</b>: შაბათი 16:00</p>
-    <p><b>კონტაქტი</b>: +995-598-36-96-97</p>
+    <span class="geo-font"><b>მისამართი</b>: მესხიშვილის მე-2 გასასვლელი, მე-8 კორპუსის მიმდებარე ტერიტორია</span>
+    <br><span class="geo-font"><b>დრო</b>: პარასკევი</span> 16:00
+    <br><span class="geo-font"><b>კონტაქტი</b>:</span> +995-598-36-96-97</p>
   </div>
   <div class="map__info map__marneuli">
-    <p><b>მისამართი</b>: ქუჩა მიხეილ ჯავახიშვილი, შესახვევი 4, #5</p>
-    <p><b>დრო</b>: კვირა 16:00</p>
-    <p><b>კონტაქტი</b>: +995-551-960-616</p>
+    <span class="geo-font"><b>მისამართი</b>: ქუჩა მიხეილ ჯავახიშვილი, შესახვევი 4, #5</span>
+    <br><span class="geo-font"><b>დრო</b>: კვირა</span> 16:00
+    <br><span class="geo-font"><b>კონტაქტი</b>:</span> +995-551-960-616</p>
   </div>
 </div>
