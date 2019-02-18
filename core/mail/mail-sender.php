@@ -15,8 +15,8 @@ if (isset($_POST['form-submit']) && !empty($_POST['form-submit'])) {
     $mail->isSMTP();                                      // Set mailer to use SMTP
     $mail->Host = 'ssl://smtp.yandex.ru';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'no-reply@younglife.ge';                 // SMTP username
-    $mail->Password = 'd2D59k7DADNU9Ni';                           // SMTP password
+    $mail->Username = 'username';                 // SMTP username
+    $mail->Password = 'password';                           // SMTP password
     $mail->SMTPSecure = 'ssl';                            // Enable ssl encryption, `TSL` also accepted
     $mail->Port = 465;                                    // TCP port to connect to
 
