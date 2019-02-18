@@ -1,0 +1,116 @@
+:focus { outline: none; }
+
+.contact {
+  display: block;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.contact__title {
+  font-size: 2em;
+  color: #ff5a00;
+  text-align: center;
+}
+
+.contact__form {
+  margin: 0 auto;
+  padding-top: 30px;
+  text-align: center;
+  width: 85%;
+}
+
+.form__input {
+  padding: 10px;
+  margin-top: 20px;
+  width: 50%;
+  min-height: 46px;
+  border: 0px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  border-radius: unset;
+  background: transparent;
+  font-size: 16px;
+  letter-spacing: normal;
+  line-height: 20px;
+}
+
+.form__input:focus {
+  background: white;
+  border-bottom: 2px solid deepskyblue;
+}
+
+.form__textarea {
+  resize: none;
+  margin-top: 30px;
+  max-height: 46px;
+  max-width: 50%;
+  min-height: 46px;
+  min-width: 50%; 
+}
+
+.form__textarea:not(:placeholder-shown) {
+  height: 200px;
+  max-height: 200px;
+  min-width: 80%;
+  width: 80%;
+  transition: 0.3s;
+}
+
+
+.form__submit {
+  padding: 7px 12px;
+  margin-top: 20px;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+  background-color: rgb(28, 107, 164, .7);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  letter-spacing: 1px;
+}
+
+.form__submit:hover,
+.form__submit:focus {
+  background-color: #1c6ba4;
+}
+
+@media screen and (max-width: 1024px) {
+  .form__input {
+    width: 80%;
+  }
+
+  .form__textarea {
+    max-width: 80%;
+    min-width: 80%; 
+  }
+
+  .form__textarea:focus {
+    resize: both;
+    height: 400px;
+    max-height: 400px;
+    min-width: 80%;
+    width: 80%;
+    transition: 0.3s;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .form__input {
+    width: 100%;
+  }
+
+  .form__textarea {
+    max-width: 100%;
+    min-width: 100%; 
+  }
+
+  .form__textarea:focus {
+    height: 200px;
+    min-width: 100%;
+    width: 100%;
+  }
+
+  .form__submit {
+    background-color: rgb(28, 107, 164);
+  }
+}
