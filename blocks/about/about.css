@@ -38,3 +38,25 @@
        -o-transition: all 0.4s ease-in-out;
           transition: all 0.4s ease-in-out; 
 }
+
+@media screen and (max-width: 900px) {
+  .about__first,
+  .about__second,
+  .about__third {
+    justify-content: center;
+    padding-top: 100px;
+  }
+
+  .about__second { flex-wrap: wrap-reverse; }
+
+  .about__text {
+    width: 85%;
+    padding-bottom: 40px;
+    font-size: 1em;
+  }
+  
+  .about__image {
+    width: 85%;
+    height: auto;
+  }
+}
