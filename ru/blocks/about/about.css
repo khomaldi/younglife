@@ -1,0 +1,40 @@
+.about {
+  display: block;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.about__first,
+.about__second,
+.about__third {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 70px;
+  width: 100%;
+}
+
+.about__text {
+  width: 49%;
+  font-size: 1em;
+}
+
+.about__image {
+  width: 49%;
+  height: auto;
+}
+
+.about__image:hover .image__img {
+  border-radius: 0px;
+  -webkit-transition: all 0.4s ease-in-out;
+       -o-transition: all 0.4s ease-in-out;
+          transition: all 0.4s ease-in-out;
+}
+
+.image__img {
+  border-radius: 120px;
+  -webkit-transition: all 0.4s ease-in-out;
+       -o-transition: all 0.4s ease-in-out;
+          transition: all 0.4s ease-in-out; 
+}
