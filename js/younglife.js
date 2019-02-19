@@ -1,231 +1,3 @@
-/* Changing visibility of .languages */
-$(document).ready(function () {
-  var width = $(window).width();
-
-  if (width <= 360) {
-    languages = $('.languages').detach();
-    $('.navigation').append(languages);
-  }
-});
-
-$(function () {
-  var width = $(window).width();
-  pull = $('.header__toggle');
-  menu = $('.navigation__menu');
-  languages = $('.languages');
-  menuHeight = menu.height();
-
-  $(pull).on('click', function (e) {
-    e.preventDefault();
-    menu.slideToggle();
-    menu.css('display', 'flex');
-    if (languages.is(':hidden')) {
-      languages.css('display', 'block');
-    } else {
-      languages.css('display', 'none');
-    }
-  });
-
-  $(window).resize(function () {
-    if (width > 320 && menu.is(':hidden')) {
-      menu.removeAttr('style');
-    }
-
-    if (width > 360) {
-      languages = $('.languages').detach();
-      $('.header__toggle').before(languages);
-      $('.languages').css('display', 'block');
-    }
-  });
-});
-/* Changing visibility of .languages (end) */
-
-/* Changing size of .header-invisible-clone */
-$(document).ready(function () {
-  var height = $('.header').outerHeight() + 15;
-  $('.header-invisible-clone').css('height', height + 'px');
-});
-
-$(window).resize(function () {
-  var height = $('.header').outerHeight() + 15;
-  $('.header-invisible-clone').css('height', height + 'px');
-});
-/* Changing size of .header-invisible-clone (end) */
-
-/* Map on index.php */
-$(document).ready(function () {
-  $("#Tbilisi").mousemove(function (pos) {
-    $(".map__tbilisi").show();
-    $(".map__tbilisi").css('left', (pos.pageX + 20) + 'px').css('top', (pos.pageY + 20) + 'px');
-  }
-  ).mouseleave(function () {
-    $(".map__tbilisi").hide();
-  });
-
-  $("#Rustavi").mousemove(function (pos) {
-    $(".map__rustavi").show();
-    $(".map__rustavi").css('left', (pos.pageX + 20) + 'px').css('top', (pos.pageY + 20) + 'px');
-  }
-  ).mouseleave(function () {
-    $(".map__rustavi").hide();
-  });
-
-  $("#Marneuli").mousemove(function (pos) {
-    $(".map__marneuli").show();
-    $(".map__marneuli").css('left', (pos.pageX + 20) + 'px').css('top', (pos.pageY + 20) + 'px');
-  }
-  ).mouseleave(function () {
-    $(".map__marneuli").hide();
-  });
-
-  $('map').imageMapResize();
-});
-/* Map on index.php (end) */
-
-/*! Image Map Resizer
- *  Desc: Resize HTML imageMap to scaled image.
- *  Copyright: (c) 2014-15 David J. Bradshaw - dave@bradshaw.net
- *  License: MIT
- */
-
-(function () {
-  'use strict';
-
-  function scaleImageMap() {
-
-    function resizeMap() {
-      function resizeAreaTag(cachedAreaCoords, idx) {
-        function scale(coord) {
-          var dimension = (1 === (isWidth = 1 - isWidth) ? 'width' : 'height');
-          return padding[dimension] + Math.floor(Number(coord) * scalingFactor[dimension]);
-        }
-
-        var isWidth = 0;
-        areas[idx].coords = cachedAreaCoords.split(',').map(scale).join(',');
-      }
-
-      var scalingFactor = {
-        width: image.width / image.naturalWidth,
-        height: image.height / image.naturalHeight
-      };
-
-      var padding = {
-        width: parseInt(window.getComputedStyle(image, null).getPropertyValue('padding-left'), 10),
-        height: parseInt(window.getComputedStyle(image, null).getPropertyValue('padding-top'), 10)
-      };
-
-      cachedAreaCoordsArray.forEach(resizeAreaTag);
-    }
-
-    function getCoords(e) {
-      //Normalize coord-string to csv format without any space chars
-      return e.coords.replace(/ *, */g, ',').replace(/ +/g, ',');
-    }
-
-    function debounce() {
-      clearTimeout(timer);
-      timer = setTimeout(resizeMap, 250);
-    }
-
-    function start() {
-      if ((image.width !== image.naturalWidth) || (image.height !== image.naturalHeight)) {
-        resizeMap();
-      }
-    }
-
-    function addEventListeners() {
-      image.addEventListener('load', resizeMap, false); //Detect late image loads in IE11
-      window.addEventListener('focus', resizeMap, false); //Cope with window being resized whilst on another tab
-      window.addEventListener('resize', debounce, false);
-      window.addEventListener('readystatechange', resizeMap, false);
-      document.addEventListener('fullscreenchange', resizeMap, false);
-    }
-
-    function beenHere() {
-      return ('function' === typeof map._resize);
-    }
-
-    function getImg(name) {
-      return document.querySelector('img[usemap="' + name + '"]');
-    }
-
-    function setup() {
-      areas = map.getElementsByTagName('area');
-      cachedAreaCoordsArray = Array.prototype.map.call(areas, getCoords);
-      image = getImg('#' + map.name) || getImg(map.name);
-      map._resize = resizeMap; //Bind resize method to HTML map element
-    }
-
-    var
-      /*jshint validthis:true */
-      map = this,
-      areas = null, cachedAreaCoordsArray = null, image = null, timer = null;
-
-    if (!beenHere()) {
-      setup();
-      addEventListeners();
-      start();
-    } else {
-      map._resize(); //Already setup, so just resize map
-    }
-  }
-
-  function factory() {
-    function chkMap(element) {
-      if (!element.tagName) {
-        throw new TypeError('Object is not a valid DOM element');
-      } else if ('MAP' !== element.tagName.toUpperCase()) {
-        throw new TypeError('Expected <MAP> tag, found <' + element.tagName + '>.');
-      }
-    }
-
-    function init(element) {
-      if (element) {
-        chkMap(element);
-        scaleImageMap.call(element);
-        maps.push(element);
-      }
-    }
-
-    var maps;
-
-    return function imageMapResizeF(target) {
-      maps = [];  // Only return maps from this call
-
-      switch (typeof (target)) {
-        case 'undefined':
-        case 'string':
-          Array.prototype.forEach.call(document.querySelectorAll(target || 'map'), init);
-          break;
-        case 'object':
-          init(target);
-          break;
-        default:
-          throw new TypeError('Unexpected data type (' + typeof target + ').');
-      }
-
-      return maps;
-    };
-  }
-
-  if (typeof define === 'function' && define.amd) {
-    define([], factory);
-  } else if (typeof module === 'object' && typeof module.exports === 'object') {
-    module.exports = factory(); //Node for browserfy
-  } else {
-    window.imageMapResize = factory();
-  }
-
-  if ('jQuery' in window) {
-    jQuery.fn.imageMapResize = function $imageMapResizeF() {
-      return this.filter('map').each(scaleImageMap).end();
-    };
-  }
-
-})();
-/* Image Map Resizer (end) */
-
-
 /*! ResponsiveSlides.js v1.55
  * http://responsiveslides.com
  * http://viljamis.com
@@ -628,6 +400,237 @@ $(function() {
   };
 })(jQuery, this, 0);
 /* ResponsiveSlides.js (end) */
+
+/*! Image Map Resizer
+ *  Desc: Resize HTML imageMap to scaled image.
+ *  Copyright: (c) 2014-15 David J. Bradshaw - dave@bradshaw.net
+ *  License: MIT
+ */
+
+(function(){
+  'use strict';
+
+  function scaleImageMap(){
+
+      function resizeMap() {
+          function resizeAreaTag(cachedAreaCoords,idx){
+              function scale(coord){
+                  var dimension = ( 1 === (isWidth = 1-isWidth) ? 'width' : 'height' );
+                  return padding[dimension] + Math.floor(Number(coord) * scalingFactor[dimension]);
+              }
+
+              var isWidth = 0;
+              areas[idx].coords = cachedAreaCoords.split(',').map(scale).join(',');
+          }
+
+          var scalingFactor = {
+              width  : image.width  / image.naturalWidth,
+              height : image.height / image.naturalHeight
+          };
+          
+          var padding = {
+              width  : parseInt(window.getComputedStyle(image, null).getPropertyValue('padding-left'), 10),
+              height : parseInt(window.getComputedStyle(image, null).getPropertyValue('padding-top'), 10)
+          };
+
+          cachedAreaCoordsArray.forEach(resizeAreaTag);
+      }
+
+      function getCoords(e){
+          //Normalize coord-string to csv format without any space chars
+          return e.coords.replace(/ *, */g,',').replace(/ +/g,',');
+      }
+
+      function debounce() {
+          clearTimeout(timer);
+          timer = setTimeout(resizeMap, 250);
+      }
+
+      function start(){
+          if ((image.width !== image.naturalWidth) || (image.height !== image.naturalHeight)) {
+              resizeMap();
+          }
+      }
+
+      function addEventListeners(){
+          image.addEventListener('load',  resizeMap, false); //Detect late image loads in IE11
+          window.addEventListener('focus',  resizeMap, false); //Cope with window being resized whilst on another tab
+          window.addEventListener('resize', debounce,  false);
+          window.addEventListener('readystatechange', resizeMap,  false);
+          document.addEventListener('fullscreenchange', resizeMap,  false);
+      }
+
+      function beenHere(){
+          return ('function' === typeof map._resize);
+      }
+
+      function getImg(name){
+          return document.querySelector('img[usemap="'+name+'"]');
+      }
+
+      function setup(){
+          areas                 = map.getElementsByTagName('area');
+          cachedAreaCoordsArray = Array.prototype.map.call(areas, getCoords);
+          image                 = getImg('#' + map.name) || getImg(map.name);
+          map._resize           = resizeMap; //Bind resize method to HTML map element
+      }
+
+      var
+          /*jshint validthis:true */
+          map   = this,
+          areas = null, cachedAreaCoordsArray = null, image = null, timer = null;
+
+      if (!beenHere()){
+          setup();
+          addEventListeners();
+          start();
+      } else {
+          map._resize(); //Already setup, so just resize map
+      }
+  }
+
+
+
+  function factory(){
+      function chkMap(element){
+          if(!element.tagName) {
+              throw new TypeError('Object is not a valid DOM element');
+          } else if ('MAP' !== element.tagName.toUpperCase()) {
+              throw new TypeError('Expected <MAP> tag, found <'+element.tagName+'>.');
+          }
+      }
+
+      function init(element){
+          if (element){
+              chkMap(element);
+              scaleImageMap.call(element);
+              maps.push(element);
+          }
+      }
+
+      var maps;
+
+      return function imageMapResizeF(target){
+          maps = [];  // Only return maps from this call
+
+          switch (typeof(target)){
+              case 'undefined':
+              case 'string':
+                  Array.prototype.forEach.call(document.querySelectorAll(target||'map'),init);
+                  break;
+              case 'object':
+                  init(target);
+                  break;
+              default:
+                  throw new TypeError('Unexpected data type ('+typeof target+').');
+          }
+
+          return maps;
+      };
+  }
+
+
+  if (typeof define === 'function' && define.amd) {
+      define([],factory);
+  } else if (typeof module === 'object' && typeof module.exports === 'object'){
+      module.exports = factory(); //Node for browserfy
+  } else {
+      window.imageMapResize = factory();
+  }
+
+
+  if('jQuery' in window) {
+      jQuery.fn.imageMapResize = function $imageMapResizeF(){
+          return this.filter('map').each(scaleImageMap).end();
+      };
+  }
+
+})();
+/* Image Map Resizer (end) */
+
+/* Map on index.php */
+$(document).ready(function () {
+  $("#Tbilisi").mousemove(function (pos) {
+    $(".map__tbilisi").show();
+    $(".map__tbilisi").css('left', (pos.pageX + 20) + 'px').css('top', (pos.pageY + 20) + 'px');
+  }
+  ).mouseleave(function () {
+    $(".map__tbilisi").hide();
+  });
+
+  $("#Rustavi").mousemove(function (pos) {
+    $(".map__rustavi").show();
+    $(".map__rustavi").css('left', (pos.pageX + 20) + 'px').css('top', (pos.pageY + 20) + 'px');
+  }
+  ).mouseleave(function () {
+    $(".map__rustavi").hide();
+  });
+
+  $("#Marneuli").mousemove(function (pos) {
+    $(".map__marneuli").show();
+    $(".map__marneuli").css('left', (pos.pageX + 20) + 'px').css('top', (pos.pageY + 20) + 'px');
+  }
+  ).mouseleave(function () {
+    $(".map__marneuli").hide();
+  });
+
+  $('map').imageMapResize();
+});
+/* Map on index.php (end) */
+
+/* Changing visibility of .languages */
+$(document).ready(function () {
+  var width = $(window).width();
+
+  if (width <= 360) {
+    languages = $('.languages').detach();
+    $('.navigation').append(languages);
+  }
+});
+
+$(function () {
+  var width = $(window).width();
+  pull = $('.header__toggle');
+  menu = $('.navigation__menu');
+  languages = $('.languages');
+  menuHeight = menu.height();
+
+  $(pull).on('click', function (e) {
+    e.preventDefault();
+    menu.slideToggle();
+    menu.css('display', 'flex');
+    if (languages.is(':hidden')) {
+      languages.css('display', 'block');
+    } else {
+      languages.css('display', 'none');
+    }
+  });
+
+  $(window).resize(function () {
+    if (width > 320 && menu.is(':hidden')) {
+      menu.removeAttr('style');
+    }
+
+    if (width > 360) {
+      languages = $('.languages').detach();
+      $('.header__toggle').before(languages);
+      $('.languages').css('display', 'block');
+    }
+  });
+});
+/* Changing visibility of .languages (end) */
+
+/* Changing size of .header-invisible-clone */
+$(document).ready(function () {
+  var height = $('.header').outerHeight() + 15;
+  $('.header-invisible-clone').css('height', height + 'px');
+});
+
+$(window).resize(function () {
+  var height = $('.header').outerHeight() + 15;
+  $('.header-invisible-clone').css('height', height + 'px');
+});
+/* Changing size of .header-invisible-clone (end) */
 
 /* Make image colorful by tap on WhoWeAre.php */
 $(document).ready(function () {
