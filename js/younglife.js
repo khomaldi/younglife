@@ -50,7 +50,9 @@ $(window).resize(function () {
   var height = $('.header').outerHeight() + 15;
   $('.header-invisible-clone').css('height', height + 'px');
 });
+/* Changing size of .header-invisible-clone (end) */
 
+/* Map on index.php */
 $(document).ready(function () {
   $("#Tbilisi").mousemove(function (pos) {
     $(".map__tbilisi").show();
@@ -78,7 +80,7 @@ $(document).ready(function () {
 
   $('map').imageMapResize();
 });
-/* Changing size of .header-invisible-clone (end) */
+/* Map on index.php (end) */
 
 /*! Image Map Resizer
  *  Desc: Resize HTML imageMap to scaled image.
@@ -626,3 +628,12 @@ $(function() {
   };
 })(jQuery, this, 0);
 /* ResponsiveSlides.js (end) */
+
+/* Make image colorful by tap on WhoWeAre.php */
+$(document).ready(function () {
+  $('.whoweare__images').click(function () {
+    $('.whoweare__images').removeClass('whoweare__images--active');
+    $(this).toggleClass('whoweare__images--active');
+  })
+});
+/* Make image colorful by tap on WhoWeAre.php (end) */
