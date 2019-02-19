@@ -8,16 +8,6 @@
 
 /*jslint browser: true, sloppy: true, vars: true, plusplus: true, indent: 2 */
 
-$(function() {
-  $(".slider__list").responsiveSlides({
-    auto: false,
-    pager: true,
-    nav: true,
-    speed: 500,
-    namespace: "slider__list"
-  });
-});
-
 (function ($, window, i) {
   $.fn.responsiveSlides = function (options) {
 
@@ -78,8 +68,8 @@ $(function() {
         $pager = $("<ul class='" + namespace + "_tabs " + namespaceIdx + "_tabs' />"),
 
         // Styles for visible and hidden slides
-        visible = {"float": "left", "position": "relative", "opacity": 1, "zIndex": 2},
-        hidden = {"float": "none", "position": "absolute", "opacity": 0, "zIndex": 1},
+        visible = { "float": "left", "position": "relative", "opacity": 1, "zIndex": 2 },
+        hidden = { "float": "none", "position": "absolute", "opacity": 0, "zIndex": 1 },
 
         // Detect transition support
         supportsTransitions = (function () {
@@ -116,7 +106,7 @@ $(function() {
             setTimeout(function () {
               settings.after(idx);
             }, fadeTime);
-          // If not, use jQuery fallback
+            // If not, use jQuery fallback
           } else {
             $slide
               .stop()
@@ -399,6 +389,16 @@ $(function() {
 
   };
 })(jQuery, this, 0);
+
+jQuery(document).ready(function ($) {
+  $(".slider__list").responsiveSlides({
+    auto: false,
+    pager: true,
+    nav: true,
+    speed: 500,
+    namespace: "slider__list"
+  });
+});
 /* ResponsiveSlides.js (end) */
 
 /*! Image Map Resizer
@@ -407,149 +407,147 @@ $(function() {
  *  License: MIT
  */
 
-(function(){
+(function () {
   'use strict';
 
-  function scaleImageMap(){
+  function scaleImageMap() {
 
-      function resizeMap() {
-          function resizeAreaTag(cachedAreaCoords,idx){
-              function scale(coord){
-                  var dimension = ( 1 === (isWidth = 1-isWidth) ? 'width' : 'height' );
-                  return padding[dimension] + Math.floor(Number(coord) * scalingFactor[dimension]);
-              }
+    function resizeMap() {
+      function resizeAreaTag(cachedAreaCoords, idx) {
+        function scale(coord) {
+          var dimension = (1 === (isWidth = 1 - isWidth) ? 'width' : 'height');
+          return padding[dimension] + Math.floor(Number(coord) * scalingFactor[dimension]);
+        }
 
-              var isWidth = 0;
-              areas[idx].coords = cachedAreaCoords.split(',').map(scale).join(',');
-          }
-
-          var scalingFactor = {
-              width  : image.width  / image.naturalWidth,
-              height : image.height / image.naturalHeight
-          };
-          
-          var padding = {
-              width  : parseInt(window.getComputedStyle(image, null).getPropertyValue('padding-left'), 10),
-              height : parseInt(window.getComputedStyle(image, null).getPropertyValue('padding-top'), 10)
-          };
-
-          cachedAreaCoordsArray.forEach(resizeAreaTag);
+        var isWidth = 0;
+        areas[idx].coords = cachedAreaCoords.split(',').map(scale).join(',');
       }
 
-      function getCoords(e){
-          //Normalize coord-string to csv format without any space chars
-          return e.coords.replace(/ *, */g,',').replace(/ +/g,',');
-      }
+      var scalingFactor = {
+        width: image.width / image.naturalWidth,
+        height: image.height / image.naturalHeight
+      };
 
-      function debounce() {
-          clearTimeout(timer);
-          timer = setTimeout(resizeMap, 250);
-      }
+      var padding = {
+        width: parseInt(window.getComputedStyle(image, null).getPropertyValue('padding-left'), 10),
+        height: parseInt(window.getComputedStyle(image, null).getPropertyValue('padding-top'), 10)
+      };
 
-      function start(){
-          if ((image.width !== image.naturalWidth) || (image.height !== image.naturalHeight)) {
-              resizeMap();
-          }
-      }
+      cachedAreaCoordsArray.forEach(resizeAreaTag);
+    }
 
-      function addEventListeners(){
-          image.addEventListener('load',  resizeMap, false); //Detect late image loads in IE11
-          window.addEventListener('focus',  resizeMap, false); //Cope with window being resized whilst on another tab
-          window.addEventListener('resize', debounce,  false);
-          window.addEventListener('readystatechange', resizeMap,  false);
-          document.addEventListener('fullscreenchange', resizeMap,  false);
-      }
+    function getCoords(e) {
+      //Normalize coord-string to csv format without any space chars
+      return e.coords.replace(/ *, */g, ',').replace(/ +/g, ',');
+    }
 
-      function beenHere(){
-          return ('function' === typeof map._resize);
-      }
+    function debounce() {
+      clearTimeout(timer);
+      timer = setTimeout(resizeMap, 250);
+    }
 
-      function getImg(name){
-          return document.querySelector('img[usemap="'+name+'"]');
+    function start() {
+      if ((image.width !== image.naturalWidth) || (image.height !== image.naturalHeight)) {
+        resizeMap();
       }
+    }
 
-      function setup(){
-          areas                 = map.getElementsByTagName('area');
-          cachedAreaCoordsArray = Array.prototype.map.call(areas, getCoords);
-          image                 = getImg('#' + map.name) || getImg(map.name);
-          map._resize           = resizeMap; //Bind resize method to HTML map element
-      }
+    function addEventListeners() {
+      image.addEventListener('load', resizeMap, false); //Detect late image loads in IE11
+      window.addEventListener('focus', resizeMap, false); //Cope with window being resized whilst on another tab
+      window.addEventListener('resize', debounce, false);
+      window.addEventListener('readystatechange', resizeMap, false);
+      document.addEventListener('fullscreenchange', resizeMap, false);
+    }
 
-      var
-          /*jshint validthis:true */
-          map   = this,
-          areas = null, cachedAreaCoordsArray = null, image = null, timer = null;
+    function beenHere() {
+      return ('function' === typeof map._resize);
+    }
 
-      if (!beenHere()){
-          setup();
-          addEventListeners();
-          start();
-      } else {
-          map._resize(); //Already setup, so just resize map
-      }
+    function getImg(name) {
+      return document.querySelector('img[usemap="' + name + '"]');
+    }
+
+    function setup() {
+      areas = map.getElementsByTagName('area');
+      cachedAreaCoordsArray = Array.prototype.map.call(areas, getCoords);
+      image = getImg('#' + map.name) || getImg(map.name);
+      map._resize = resizeMap; //Bind resize method to HTML map element
+    }
+
+    var
+      /*jshint validthis:true */
+      map = this,
+      areas = null, cachedAreaCoordsArray = null, image = null, timer = null;
+
+    if (!beenHere()) {
+      setup();
+      addEventListeners();
+      start();
+    } else {
+      map._resize(); //Already setup, so just resize map
+    }
   }
 
+  function factory() {
+    function chkMap(element) {
+      if (!element.tagName) {
+        throw new TypeError('Object is not a valid DOM element');
+      } else if ('MAP' !== element.tagName.toUpperCase()) {
+        throw new TypeError('Expected <MAP> tag, found <' + element.tagName + '>.');
+      }
+    }
 
+    function init(element) {
+      if (element) {
+        chkMap(element);
+        scaleImageMap.call(element);
+        maps.push(element);
+      }
+    }
 
-  function factory(){
-      function chkMap(element){
-          if(!element.tagName) {
-              throw new TypeError('Object is not a valid DOM element');
-          } else if ('MAP' !== element.tagName.toUpperCase()) {
-              throw new TypeError('Expected <MAP> tag, found <'+element.tagName+'>.');
-          }
+    var maps;
+
+    return function imageMapResizeF(target) {
+      maps = [];  // Only return maps from this call
+
+      switch (typeof (target)) {
+        case 'undefined':
+        case 'string':
+          Array.prototype.forEach.call(document.querySelectorAll(target || 'map'), init);
+          break;
+        case 'object':
+          init(target);
+          break;
+        default:
+          throw new TypeError('Unexpected data type (' + typeof target + ').');
       }
 
-      function init(element){
-          if (element){
-              chkMap(element);
-              scaleImageMap.call(element);
-              maps.push(element);
-          }
-      }
-
-      var maps;
-
-      return function imageMapResizeF(target){
-          maps = [];  // Only return maps from this call
-
-          switch (typeof(target)){
-              case 'undefined':
-              case 'string':
-                  Array.prototype.forEach.call(document.querySelectorAll(target||'map'),init);
-                  break;
-              case 'object':
-                  init(target);
-                  break;
-              default:
-                  throw new TypeError('Unexpected data type ('+typeof target+').');
-          }
-
-          return maps;
-      };
+      return maps;
+    };
   }
 
 
   if (typeof define === 'function' && define.amd) {
-      define([],factory);
-  } else if (typeof module === 'object' && typeof module.exports === 'object'){
-      module.exports = factory(); //Node for browserfy
+    define([], factory);
+  } else if (typeof module === 'object' && typeof module.exports === 'object') {
+    module.exports = factory(); //Node for browserfy
   } else {
-      window.imageMapResize = factory();
+    window.imageMapResize = factory();
   }
 
 
-  if('jQuery' in window) {
-      jQuery.fn.imageMapResize = function $imageMapResizeF(){
-          return this.filter('map').each(scaleImageMap).end();
-      };
+  if ('jQuery' in window) {
+    jQuery.fn.imageMapResize = function $imageMapResizeF() {
+      return this.filter('map').each(scaleImageMap).end();
+    };
   }
 
 })();
 /* Image Map Resizer (end) */
 
 /* Map on index.php */
-$(document).ready(function () {
+jQuery(document).ready(function ($) {
   $("#Tbilisi").mousemove(function (pos) {
     $(".map__tbilisi").show();
     $(".map__tbilisi").css('left', (pos.pageX + 20) + 'px').css('top', (pos.pageY + 20) + 'px');
@@ -573,7 +571,9 @@ $(document).ready(function () {
   ).mouseleave(function () {
     $(".map__marneuli").hide();
   });
+});
 
+jQuery(document).ready(function ($) {
   $('map').imageMapResize();
 });
 /* Map on index.php (end) */
