@@ -14,3 +14,5 @@ ru/blocks/header/header.js
 ru/blocks/map/map.js
 ru/blocks/whoweare/whoweare.js
 .htaccess
+core/yandex/yandex-metrika.tpl
+blocks/map/map.js
