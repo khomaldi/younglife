@@ -1,11 +1,11 @@
 
 .vscode
+.htaccess
 blocks/about/images
 blocks/clubs/marneuli/images
 blocks/clubs/rustavi/images
 blocks/clubs/tbilisi/images
 blocks/events/images
-core/yandex-metrika.tpl
 blocks/events/responsiveslides.js
 blocks/map/map.js
 blocks/whoweare/whoweare.js
@@ -13,6 +13,4 @@ ru/blocks/events/responsiveslides.js
 ru/blocks/header/header.js
 ru/blocks/map/map.js
 ru/blocks/whoweare/whoweare.js
-.htaccess
 core/yandex/yandex-metrika.tpl
-blocks/map/map.js
