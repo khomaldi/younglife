@@ -6,12 +6,10 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/core/main.php');
 <head>
   <!-- Title -->
   <title>Кто Мы</title>
-  <link rel="alternate" hreflang="ru" href="https://younglife.ge/ru/pages/whoweare.php" />
-  <link rel="alternate" hreflang="ka" href="https://younglife.ge/pages/whoweare.php" />
 
   <!-- Meta -->
   <meta charset="utf-8">
-  <meta name="keywords" content="Мы, Информация, Команда, Лидеры, YoungLife, young, life, georgia, Грузия, янг, лайф, янглайф, официальный, сайт">
+  <meta name="keywords" content="Кто, Мы, Информация, Команда, Лидеры, team, liders, YoungLife, young, life, younglife, georgia, Грузия, янг, лайф, янглайф, официальный, сайт">
   <meta name="description" content="Young Life начинается с обеспокоенных молодых людей, которые проводят время, строя мосты подлинной дружбы с подростками &mdash; там где они есть, какие они есть. Поскольку их лидеры безоговорочно верят в них, подростки начинают понимать, что их жизнь имеет большую ценность, смысл и цель. Young Life предлагает подросткам приключения, гостеприимство и безусловную дружбу. Волонтёры Young Life и лидеры строят отношения с подростками, приглашая их на различные мероприятия: встречи под названием 'Клуб' и лагерь. Здесь подростки могут быть самими собой, получать удовольствие и размышлять над некоторыми самыми важными вопросами: 'Как мы можем проживать нашу жизнь?' и 'Почему мы здесь?' Для тех, кто хочет глубже исследовать эти вопросы своей жизни, мы предлагаем небольшие групповые собрания, которые позволяют подросткам более полно исследовать учение и жизнь Иисуса Христа.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="og:title" content="Young Life Кто Мы">

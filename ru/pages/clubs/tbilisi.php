@@ -7,12 +7,10 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/core/main.php');
 <head>
   <!-- Title -->
   <title>Тбилиси</title>
-  <link rel="alternate" hreflang="ru" href="https://younglife.ge/ru/pages/clubs/tbilisi.php" />
-  <link rel="alternate" hreflang="ka" href="https://younglife.ge/pages/clubs/tbilisi.php" />
 
    <!-- Meta -->
    <meta charset="utf-8">
-  <meta name="keywords" content="Тбилиси, Rbilisi, YoungLife, young, life, georgia, Грузия, янг, лайф, янглайф, официальный, сайт">
+  <meta name="keywords" content="Тбилиси, Rbilisi, YoungLife, young, life, younglife, georgia, Грузия, янг, лайф, янглайф, официальный, сайт">
   <meta name="description"
     content="Young Life клуб в Тбилиси. Тбилисский клуб. Адрес: Каргаретели 9 (офис 'cartwheels'). Время: Суббота 16:00. Контакты: +995-598-78-27-32">
   <meta name="viewport" content="width=device-width, initial-scale=1">

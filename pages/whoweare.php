@@ -6,12 +6,10 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/core/main.php');
 <head>
   <!-- Title -->
   <title>ჩვენს შესახე</title>
-  <link rel="alternate" hreflang="ka" href="https://younglife.ge/pages/whoweare.php" />
-  <link rel="alternate" hreflang="ru" href="https://younglife.ge/ru/pages/whoweare.php" />
 
   <!-- Meta -->
   <meta charset="utf-8">
-  <meta name="keywords" content="ჩვენს, შესახებ, გუნდი, ლიდერები, ინფორმაცია, YoungLife, young, life, georgia, saqartvelo, საქართველო, იანგ, ლაიფი, იანგლაიფი, ოფიციალური, საიტი">
+  <meta name="keywords" content="ჩვენს, შესახებ, გუნდი, ლიდერები, ინფორმაცია, team, liders, YoungLife, young, life, younglife, georgia, საქართველო, იანგ, ლაიფი, იანგლაიფი, ოფიციალური, საიტი">
   <meta name="description" content="Young Life შედგება იმ ადამიანებით რომლებსაც ადარდებთ სხვები, დროს ატარებენ მოზარდებთან და ამყარებენ მეგობრულ ურთეიერთობებს. Young Life-ის ლიდერი ყველას ღებულობს ისეთს როგორებიც არიან. ლიდერები უსიტყვოდ ენდობიან ახალგაზრდებს, რის გამოც ბევრი მათგანი იწყებს დაფიქრებას ცხოვრებისეულ ფასეულობებზე, თუ რაოდენ ძვირფასები არიან ისინი და რომ მათ ცხოვრებას გააჩნია აზრი და მიზანი. Young Life მოზარდებს თავგადასავლებს, სტუმართმოყვარეობას და უპირობო მეგობრობას სთავაზობს.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="og:title" content="Young Life ჩვენს შესახებ">

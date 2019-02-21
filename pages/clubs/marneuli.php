@@ -7,12 +7,10 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/core/main.php');
 <head>
   <!-- Title -->
   <title>მარნეული</title>
-  <link rel="alternate" hreflang="ka" href="https://younglife.ge/pages/clubs/marneuli.php" />
-  <link rel="alternate" hreflang="ru" href="https://younglife.ge/ru/pages/clubs/marneuli.php" />
 
   <!-- Meta -->
   <meta charset="utf-8">
-  <meta name="keywords" content="მარნეული, Marneuli, YoungLife, young, life, georgia, saqartvelo, საქართველო, იანგ, ლაიფი, იანგლაიფი, ოფიციალური, საიტი">
+  <meta name="keywords" content="მარნეული, Marneuli, YoungLife, young, life, younglife, georgia, საქართველო, იანგ, ლაიფი, იანგლაიფი, ოფიციალური, საიტი">
   <meta name="description"
     content="Young Life-ის კლუბი მარნეულში. მარნეულის კლუბი. მისამართი: ქუჩა მიხეილ ჯავახიშვილი, შესახვევი 4, #5. დრო: კვირა 16:00. კონტაქტი: +995-551-960-616">
   <meta name="viewport" content="width=device-width, initial-scale=1">

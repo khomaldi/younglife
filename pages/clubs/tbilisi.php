@@ -7,12 +7,10 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/core/main.php');
 <head>
   <!-- Title -->
   <title>თბილისი</title>
-  <link rel="alternate" hreflang="ka" href="https://younglife.ge/pages/clubs/tbilisi.php" />
-  <link rel="alternate" hreflang="ru" href="https://younglife.ge/ru/pages/clubs/tbilisi.php" />
 
   <!-- Meta -->
   <meta charset="utf-8">
-  <meta name="keywords" content="თბილისი, Tbilisi, YoungLife, young, life, georgia, saqartvelo, საქართველო, იანგ, ლაიფი, იანგლაიფი, ოფიციალური, საიტი">
+  <meta name="keywords" content="თბილისი, Tbilisi, YoungLife, young, life, younglife, georgia, საქართველო, იანგ, ლაიფი, იანგლაიფი, ოფიციალური, საიტი">
   <meta name="description"
     content="Young Life-ის კლუბი თბილისში. თბილისის კლუბი. მისამართი: კარგარეთელის #9 (ოფისი 'cartwheels') დრო: ორშაბათი 17:00. კონტაქტი: +995-598-78-27-32">
   <meta name="viewport" content="width=device-width, initial-scale=1">

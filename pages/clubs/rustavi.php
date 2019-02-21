@@ -7,12 +7,10 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/core/main.php');
 <head>
   <!-- Title -->
   <title>რუსთავი</title>
-  <link rel="alternate" hreflang="ka" href="https://younglife.ge/pages/clubs/rustavi.php" />
-  <link rel="alternate" hreflang="ru" href="https://younglife.ge/ru/pages/clubs/rustavi.php" />
 
   <!-- Meta -->
   <meta charset="utf-8">
-  <meta name="keywords" content="რუსთავი, Rustavi, YoungLife, young, life, georgia, saqartvelo, საქართველო, იანგ, ლაიფი, იანგლაიფი, ოფიციალური, საიტი">
+  <meta name="keywords" content="რუსთავი, Rustavi, YoungLife, young, life, younglife, georgia, საქართველო, იანგ, ლაიფი, იანგლაიფი, ოფიციალური, საიტი">
   <meta name="description"
     content="Young Life-ის კლუბი რუსთავში. რუსთავის კლუბი. მისამართი: მესხიშვილის მე-2 გასასვლელი, მე-8 კორპუსის მიმდებარე ტერიტორია. დრო: შაბათი 16:00. კონტაქტი: +995-598-36-96-97">
   <meta name="viewport" content="width=device-width, initial-scale=1">
