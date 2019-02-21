@@ -1,7 +1,8 @@
 <div class="contact">
   <p class="contact__title geo-font-mtavruli">მოგვწერეთ</p>
   <form name="contact__form" class="contact__form" action="contact.php" method="post" autocomplete="off" accept-charset="UTF-8">
-    <span class="geo-font">ჩვენი</span><span class="rus-font"> e-mail: mail@younglife.ge</span><br>
+    <span class="geo-font">ჩვენი</span><span class="rus-font"> e-mail: mail@younglife.ge</span>
+    <br>
     <input type="text" class="form__input geo-font" name="form-name" autocomplete="off" autocapitalize="off" autocorrect="off" minlength="2"
       maxlength="32" pattern="{L}{2,32}" placeholder="თქვენი სახელი" required spellcheck="false">
     <br>
