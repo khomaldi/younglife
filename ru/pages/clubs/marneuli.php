@@ -7,10 +7,12 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/core/main.php');
 <head>
   <!-- Title -->
   <title>Марнеули</title>
+  <link rel="alternate" hreflang="ru" href="https://younglife.ge/ru/pages/clubs/marneuli.php" />
+  <link rel="alternate" hreflang="ka" href="https://younglife.ge/pages/clubs/marneuli.php" />
 
   <!-- Meta -->
   <meta charset="utf-8">
-  <meta name="keywords" content="Марнеули, Marneuli, YoungLife, young, life, younglife, georgia, Грузия, янг, лайф, янглайф, официальный, сайт">
+  <meta name="keywords" content="Марнеули, Marneuli, YoungLife, young, life, georgia, Грузия, янг, лайф, янглайф, официальный, сайт">
   <meta name="description"
     content="Young Life клуб в Марнеули. Марнеульский клуб. Адрес: ул. Михаила Джавахишвили, перулок 4, дом 5. Время: Воскресенье 16:00. Контакты: +995-551-960-616">
   <meta name="viewport" content="width=device-width, initial-scale=1">
