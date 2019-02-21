@@ -15,10 +15,12 @@ try {
 <head>
   <!-- Title -->
   <title>Контакты</title>
+  <link rel="alternate" hreflang="ru" href="https://younglife.ge/ru/pages/contact.php" />
+  <link rel="alternate" hreflang="ka" href="https://younglife.ge/pages/contact.php" />
 
   <!-- Meta -->
   <meta charset="utf-8">
-  <meta name="keywords" content="Контакты, Написать, Связаться, YoungLife, young, life, younglife, georgia, Грузиия, янг, лайф, янглайф, официальный, сайт">
+  <meta name="keywords" content="Контакты, Написать, Связаться, YoungLife, young, life, georgia, Грузиия, янг, лайф, янглайф, официальный, сайт">
   <meta name="description" content="Связаться с Young Life Грузия. mail@younglife.ge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="og:title" content="Young Life Контакты">
