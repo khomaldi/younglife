@@ -6,10 +6,12 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/core/main.php');
 <head>
   <!-- Title -->
   <title>Young Life საქართველო</title>
+  <link rel="alternate" hreflang="ka" href="https://younglife.ge" />
+  <link rel="alternate" hreflang="ru" href="https://younglife.ge/ru" />
 
   <!-- Meta -->
   <meta charset="utf-8">
-  <meta name="keywords" content="მთავარი, YoungLife, young, life, younglife, georgia, საქართველო, იანგ, ლაიფი, იანგლაიფი, ოფიციალური, საიტი">
+  <meta name="keywords" content="მთავარი, YoungLife, young, life, georgia, saqartvelo, საქართველო, იანგ, ლაიფი, იანგლაიფი, ოფიციალური, საიტი">
   <meta name="description" content="«Young Life» &mdash; არის ორგანიზაცია რომელიც შედგება ერთი მიზნით გაერთიანებული ხალხისგან. მათი მთავარი მიზანი მოზარდების ცხოვრების გაუმჯობესებაა. ჩვენ ვეხმარებით ახალგაზრდებს საკუთარი ნიჭის აღმოჩენასა და განვითარებაში. ვასწავლით მათ, თავდაჯერებულად შეხვდნენ ყველა იმ გამოწვევას, რომლებსაც მათ ცხოვრება უგზავნის; გაუმკლავდნენ ყველა გამოწვევას, თავი აიმაღლონ იმედგაცრუებისა და სიბოროტის დასაძლევად; მიაღწიონ ყველა რეალისტურ ოცნებას; ისწავლონ საკუთარი თავის და გარშემომყოფების პატივისცემა.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="og:title" content="Young Life საქართველო">
