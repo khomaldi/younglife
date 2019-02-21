@@ -927,3 +927,9 @@ img {
     height: auto;
   }
 }
+
+@media screen and (max-width: 568px) {
+  .about {
+    width 100%;
+  }
+}
