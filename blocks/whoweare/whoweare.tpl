@@ -25,26 +25,10 @@
   </div>
   <div class="whoweare__images">
     <div class="images__block">
-      <img class="images__img" src="https://younglife.ge/blocks/whoweare/images/grach.jpg" title="გრაჩი">
+      <img class="images__img" src="https://younglife.ge/blocks/whoweare/images/irakli.jpg" title="ირაკლი">
     </div>
     <div class="images__name">
-      <span class="name geo-font-mtavruli">გრაჩი</span>
-    </div>
-  </div>
-<!--   <div class="whoweare__images">
-    <div class="images__block">
-      <img class="images__img" src="https://younglife.ge/blocks/whoweare/images/tamo.jpg" title="თამუნა">
-    </div>
-    <div class="images__name">
-      <span class="name geo-font-mtavruli">თამუნა</span>
-    </div>
-  </div> -->
-  <div class="whoweare__images">
-    <div class="images__block">
-      <img class="images__img" src="https://younglife.ge/blocks/whoweare/images/lika.jpg" title="ლიკა">
-    </div>
-    <div class="images__name">
-      <span class="name geo-font-mtavruli">ლიკა</span>
+      <span class="name geo-font-mtavruli">ირაკლი</span>
     </div>
   </div>
   <div class="whoweare__images">
@@ -57,20 +41,28 @@
   </div>
   <div class="whoweare__images">
     <div class="images__block">
-      <img class="images__img" src="https://younglife.ge/blocks/whoweare/images/irakli.jpg" title="ირაკლი">
+      <img class="images__img" src="https://younglife.ge/blocks/whoweare/images/grach.jpg" title="გრაჩი">
     </div>
     <div class="images__name">
-      <span class="name geo-font-mtavruli">ირაკლი</span>
+      <span class="name geo-font-mtavruli">გრაჩი</span>
     </div>
   </div>
-  <!-- <div class="whoweare__images">
+<!--   <div class="whoweare__images">
     <div class="images__block">
-      <img class="images__img" src="https://younglife.ge/blocks/whoweare/images/daniela.jpg" title="დანიელა">
+      <img class="images__img" src="https://younglife.ge/blocks/whoweare/images/nana.jpg" title="ნანა">
     </div>
     <div class="images__name">
-      <span class="name geo-font-mtavruli">დანიელა</span>
+      <span class="name geo-font-mtavruli">ნანა</span>
     </div>
   </div> -->
+  <div class="whoweare__images">
+    <div class="images__block">
+      <img class="images__img" src="https://younglife.ge/blocks/whoweare/images/rasul.jpg" title="რასულ">
+    </div>
+    <div class="images__name">
+      <span class="name geo-font-mtavruli">რასულ</span>
+    </div>
+  </div>
   <div class="whoweare__images">
     <div class="images__block">
       <img class="images__img" src="https://younglife.ge/blocks/whoweare/images/lavrent.jpg" title="ლავრენტი">
@@ -81,18 +73,10 @@
   </div>
   <div class="whoweare__images">
     <div class="images__block">
-      <img class="images__img" src="https://younglife.ge/blocks/whoweare/images/bela.jpg" title="ბელა">
+      <img class="images__img" src="https://younglife.ge/blocks/whoweare/images/lika.jpg" title="ლიკა">
     </div>
     <div class="images__name">
-      <span class="name geo-font-mtavruli">ბელა</span>
-    </div>
-  </div>
-  <div class="whoweare__images">
-    <div class="images__block">
-      <img class="images__img" src="https://younglife.ge/blocks/whoweare/images/rasul.jpg" title="რასულ">
-    </div>
-    <div class="images__name">
-      <span class="name geo-font-mtavruli">რასულ</span>
+      <span class="name geo-font-mtavruli">ლიკა</span>
     </div>
   </div>
   <div class="whoweare__images">

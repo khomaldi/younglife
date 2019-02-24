@@ -25,26 +25,10 @@
   </div>
   <div class="whoweare__images">
     <div class="images__block">
-      <img class="images__img" src="https://younglife.ge/blocks/whoweare/images/grach.jpg" title="Грач">
+      <img class="images__img" src="https://younglife.ge/blocks/whoweare/images/irakli.jpg" title="Иракли">
     </div>
     <div class="images__name">
-      <span class="name rus-font-title rus-font-300">Грач</span>
-    </div>
-  </div>
-<!--   <div class="whoweare__images">
-    <div class="images__block">
-      <img class="images__img" src="https://younglife.ge/blocks/whoweare/images/tamo.jpg" title="Тамуна">
-    </div>
-    <div class="images__name">
-      <span class="name rus-font-title rus-font-300">Тамуна</span>
-    </div>
-  </div> -->
-  <div class="whoweare__images">
-    <div class="images__block">
-      <img class="images__img" src="https://younglife.ge/blocks/whoweare/images/lika.jpg" title="Лика">
-    </div>
-    <div class="images__name">
-      <span class="name rus-font-title rus-font-300">Лика</span>
+      <span class="name rus-font-title rus-font-300">Иракли</span>
     </div>
   </div>
   <div class="whoweare__images">
@@ -57,20 +41,28 @@
   </div>
   <div class="whoweare__images">
     <div class="images__block">
-      <img class="images__img" src="https://younglife.ge/blocks/whoweare/images/irakli.jpg" title="Иракли">
+      <img class="images__img" src="https://younglife.ge/blocks/whoweare/images/grach.jpg" title="Грач">
     </div>
     <div class="images__name">
-      <span class="name rus-font-title rus-font-300">Иракли</span>
+      <span class="name rus-font-title rus-font-300">Грач</span>
     </div>
   </div>
 <!--   <div class="whoweare__images">
     <div class="images__block">
-      <img class="images__img" src="https://younglife.ge/blocks/whoweare/images/daniela.jpg" title="Даниэла">
+      <img class="images__img" src="https://younglife.ge/blocks/whoweare/images/nana.jpg" title="Нана">
     </div>
     <div class="images__name">
-      <span class="name rus-font-title rus-font-300">Даниэла</span>
+      <span class="name rus-font-title rus-font-300">Нана</span>
     </div>
   </div> -->
+  <div class="whoweare__images">
+    <div class="images__block">
+      <img class="images__img" src="https://younglife.ge/blocks/whoweare/images/rasul.jpg" title="Расул">
+    </div>
+    <div class="images__name">
+      <span class="name rus-font-title rus-font-300">Расул</span>
+    </div>
+  </div>
   <div class="whoweare__images">
     <div class="images__block">
       <img class="images__img" src="https://younglife.ge/blocks/whoweare/images/lavrent.jpg" title="Лаврент">
@@ -81,18 +73,10 @@
   </div>
   <div class="whoweare__images">
     <div class="images__block">
-      <img class="images__img" src="https://younglife.ge/blocks/whoweare/images/bela.jpg" title="Бела">
+      <img class="images__img" src="https://younglife.ge/blocks/whoweare/images/lika.jpg" title="Лика">
     </div>
     <div class="images__name">
-      <span class="name rus-font-title rus-font-300">Бела</span>
-    </div>
-  </div>
-  <div class="whoweare__images">
-    <div class="images__block">
-      <img class="images__img" src="https://younglife.ge/blocks/whoweare/images/rasul.jpg" title="Расул">
-    </div>
-    <div class="images__name">
-      <span class="name rus-font-title rus-font-300">Расул</span>
+      <span class="name rus-font-title rus-font-300">Лика</span>
     </div>
   </div>
   <div class="whoweare__images">
