@@ -31,14 +31,14 @@
       <span class="name geo-font-mtavruli">გრაჩი</span>
     </div>
   </div>
-  <div class="whoweare__images">
+<!--   <div class="whoweare__images">
     <div class="images__block">
       <img class="images__img" src="https://younglife.ge/blocks/whoweare/images/tamo.jpg" title="თამუნა">
     </div>
     <div class="images__name">
       <span class="name geo-font-mtavruli">თამუნა</span>
     </div>
-  </div>
+  </div> -->
   <div class="whoweare__images">
     <div class="images__block">
       <img class="images__img" src="https://younglife.ge/blocks/whoweare/images/lika.jpg" title="ლიკა">
@@ -63,14 +63,14 @@
       <span class="name geo-font-mtavruli">ირაკლი</span>
     </div>
   </div>
-  <div class="whoweare__images">
+  <!-- <div class="whoweare__images">
     <div class="images__block">
       <img class="images__img" src="https://younglife.ge/blocks/whoweare/images/daniela.jpg" title="დანიელა">
     </div>
     <div class="images__name">
       <span class="name geo-font-mtavruli">დანიელა</span>
     </div>
-  </div>
+  </div> -->
   <div class="whoweare__images">
     <div class="images__block">
       <img class="images__img" src="https://younglife.ge/blocks/whoweare/images/lavrent.jpg" title="ლავრენტი">

@@ -31,14 +31,14 @@
       <span class="name rus-font-title rus-font-300">Грач</span>
     </div>
   </div>
-  <div class="whoweare__images">
+<!--   <div class="whoweare__images">
     <div class="images__block">
       <img class="images__img" src="https://younglife.ge/blocks/whoweare/images/tamo.jpg" title="Тамуна">
     </div>
     <div class="images__name">
       <span class="name rus-font-title rus-font-300">Тамуна</span>
     </div>
-  </div>
+  </div> -->
   <div class="whoweare__images">
     <div class="images__block">
       <img class="images__img" src="https://younglife.ge/blocks/whoweare/images/lika.jpg" title="Лика">
@@ -63,14 +63,14 @@
       <span class="name rus-font-title rus-font-300">Иракли</span>
     </div>
   </div>
-  <div class="whoweare__images">
+<!--   <div class="whoweare__images">
     <div class="images__block">
       <img class="images__img" src="https://younglife.ge/blocks/whoweare/images/daniela.jpg" title="Даниэла">
     </div>
     <div class="images__name">
       <span class="name rus-font-title rus-font-300">Даниэла</span>
     </div>
-  </div>
+  </div> -->
   <div class="whoweare__images">
     <div class="images__block">
       <img class="images__img" src="https://younglife.ge/blocks/whoweare/images/lavrent.jpg" title="Лаврент">
