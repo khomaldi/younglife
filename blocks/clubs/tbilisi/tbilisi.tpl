@@ -1,6 +1,9 @@
 <div class="info-text--clubs width--65">
+  <span class="rus-font-title rus-font-300">YOUNG LIFE </span><span class="rus-font-title geo-font-mtavruli">თბილისი</span>
+  <br>
+  <br>
   <p class="info-text__title geo-font-mtavruli">ინფორმაცია:</p>
-  <p class="info-text__text">
+  <p class="info-text__text margin-top_0">
     <span class="geo-font"><b>მისამართი</b>: კარგარეთელის</span> #9 (ოფისი "cartwheels")
     <br><span class="geo-font"><b>დრო</b>: ორშაბათი</span> 17:00
     <br><span class="geo-font"><b>კონტაქტი</b>:</span> +995-598-78-27-32</p>
