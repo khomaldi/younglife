@@ -1,7 +1,9 @@
 <div class="info-text--clubs width--65">
+  <p class="rus-font-title rus-font-300">YOUNG LIFE ТБИЛИСИ</p>
+  <br>
   <p class="info-text__title rus-font-title rus-font-300">Информация:</p>
-  <p class="info-text__text">
-    <span class="rus-font-300"><b>Адрес</b>: Каргаретели 9 (офис "cartwheels") 
+  <p class="info-text__text rus-font-300 margin-top_0">
+    <b>Адрес</b>: Каргаретели 9 (офис "cartwheels") 
     <br><b>Время</b>: Понедельник 17:00 
     <br><b>Контакты</b>: +995-598-78-27-32</p>
 </div>
