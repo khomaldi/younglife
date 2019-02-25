@@ -18,3 +18,4 @@
     <input type="submit" class="form__submit geo-font-mtavruli" name="form-submit" value="გაგზავნა">
   </form>
 </div>
+

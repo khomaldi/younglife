@@ -8,7 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://younglife.ge/js/yl.min.js"></script>
 
-  <!-- Fonts links -->
+  <!-- Fonts Links -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="//younglife/css/fonts/bpg-nino-mtavruli/css/bpg-nino-mtavruli.min.css">
   <link rel="stylesheet" href="//younglife/css/fonts/bpg-rioni/css/bpg-rioni.min.css">

@@ -243,7 +243,10 @@ img {
     padding: 0;
   }
 
-  .languages { padding: 0; }
+  .languages {
+    padding: 0;
+    line-height: 1px;
+  }
 }
 
 .header-invisible-clone {
@@ -585,8 +588,10 @@ img {
   padding-bottom: 50px;
 }
 
-.width--65 {
-  width: 65%;
+.width--65 { width: 65%; }
+
+@media screen and (max-width: 568px) {
+  .width--65 { width: 85%; }
 }
 
 .slider {
@@ -943,6 +948,6 @@ img {
 
 @media screen and (max-width: 568px) {
   .about {
-    width 100%;
+    width: 100%;
   }
 }

@@ -19,3 +19,4 @@
     <li class="list__item"><img class="item__image" src="https://younglife.ge/blocks/clubs/tbilisi/images/007.jpg" alt=""></li>
   </ul>
 </div>
+

@@ -29,3 +29,4 @@ if (mb_stripos($link, '.ge/ru') == true) {
   $georgian = $link;
 }
 ?>
+

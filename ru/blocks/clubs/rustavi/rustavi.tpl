@@ -18,3 +18,4 @@
     <li class="list__item"><img class="item__image" src="https://younglife.ge/blocks/clubs/rustavi/images/006.jpg" alt=""></li>
   </ul>
 </div>
+

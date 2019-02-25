@@ -22,7 +22,6 @@ if (isset($_POST['form-submit']) && !empty($_POST['form-submit'])) {
 
     $mail->SetFrom('no-reply@younglife.ge'); // Ваш Email
     $mail->addAddress('admin@younglife.ge'); // Email получателя
-    $mail->addAddress('khomaldi@yandex.ru'); // Еще один email, если нужно.
 
     $form_name = htmlentities($_POST['form-name']);
     $form_email = htmlentities($_POST['form-email']);
