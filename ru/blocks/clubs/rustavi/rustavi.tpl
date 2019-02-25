@@ -1,6 +1,8 @@
 <div class="info-text--clubs width--65">
+  <p class="rus-font-title rus-font-300">YOUNG LIFE РУСТАВИ</p>
+  <br>
   <p class="info-text__title rus-font-title rus-font-300">Информация:</p>
-  <p class="info-text__text rus-font-300">
+  <p class="info-text__text rus-font-300 margin-top_0">
     <b>Адрес</b>: 2-ой проход Месхишвили около 8-го корпуса 
     <br><b>Время</b>: Пятница 16:00 
     <br><b>Контакты</b>: +995-598-36-96-97</p>
