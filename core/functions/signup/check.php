@@ -1,5 +1,5 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT'] . '/core/sql.php']);
+require_once($_SERVER['DOCUMENT_ROOT'] . '/core/sql.php');
 
 function check_email() {
   /* If we found email in table */
