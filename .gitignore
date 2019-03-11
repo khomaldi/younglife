@@ -15,3 +15,4 @@ ru/blocks/header/header.js
 ru/blocks/map/map.js
 ru/blocks/whoweare/whoweare.js
 core/yandex/yandex-metrika.tpl
+core/sql.php
