@@ -951,3 +951,179 @@ img {
     width: 100%;
   }
 }
+
+
+.login {
+  display: block;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.login__title {
+  font-size: 2em;
+  color: #ff5a00;
+  text-align: center;
+}
+
+.login__form {
+  margin: 0 auto;
+  width: 340px;
+  text-align: left;
+}
+
+.form_wrong {
+  display: none;
+  padding: 0;
+  margin: 0;
+  color: #d6384a;
+  font-size: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.form__input {
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+  min-height: 46px;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: normal;
+  border: 0px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  border-radius: unset;
+  background: transparent;
+}
+
+.form__input:focus {
+  background: white;
+  border-bottom: 2px solid deepskyblue;
+}
+
+.form__button {
+  padding: 7px 12px;
+  margin-top: 20px;
+  font-family: 'Roboto',sans-serif!important;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+  background-color: #1c6ba4;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 568px) {
+  .login {
+    width: 100%;
+  }
+}
+ 
+.login__reset-password {
+  margin-left: 40px;
+  color: #000;
+  text-decoration: none;
+}
+
+.login__reset-password:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.create-profile__button {
+  color: #0366d6 !important;
+  text-decoration: none;
+}
+
+.create-profile__button:hover {
+  color: #0366d6 !important;
+  text-decoration: underline;
+}
+
+.login__create-profile {
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 15px 20px;
+  width: 340px;
+  text-align: center;
+  border: 1px solid #d8dee2;
+  border-radius: 5px;
+}
+
+.signup {
+  display: block;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.signup__title {
+  font-size: 2em;
+  color: #ff5a00;
+  text-align: center;
+}
+
+.signup__form {
+  margin: 0 auto;
+  width: 340px;
+  text-align: center;
+}
+
+.form__sex {
+  color: #757575;
+  padding: 10px 6px;
+}
+
+.form__button_disable {
+  pointer-events: none;
+  cursor: default;
+  background-color: #1c6ba4;
+  opacity: 0.7;
+}
+
+.form__input_warning {
+  border: 0px solid #ccc;
+  border-bottom: 2px solid #d6384a;
+  border-radius: unset;
+  background: transparent;
+  font-size: 16px;
+  letter-spacing: normal;
+  line-height: 20px;
+  margin-top: 20px;
+  min-height: 46px;
+  padding: 10px;
+  width: 100%;
+}
+
+.form__input_warning:focus {
+  background: white;
+  border-bottom: 2px solid #d6384a;
+}
+
+.form__input_success {
+  border: 0px solid #ccc;
+  border-bottom: 2px solid #2ebc4f;
+  border-radius: unset;
+  background: transparent;
+  font-size: 16px;
+  letter-spacing: normal;
+  line-height: 20px;
+  margin-top: 20px;
+  min-height: 46px;
+  padding: 10px;
+  width: 100%;
+}
+
+.form__input_success:focus {
+  background: white;
+  border-bottom: 2px solid #2ebc4f;
+}
+
+@media screen and (max-width: 568px) {
+  .signup {
+    width: 100%;
+  }
+}
