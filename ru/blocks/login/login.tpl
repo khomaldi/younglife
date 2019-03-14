@@ -1,6 +1,6 @@
 <div class="login">
   <p class="login__title rus-font-title rus-font-300">Авторизация</p>
-  <form name="login__form" class="login__form" action="login.php" method="post" autocomplete="off" accept-charset="UTF-8">
+  <form name="login__form" class="login__form" action="" method="post" autocomplete="off" accept-charset="UTF-8">
     <p class="form_wrong">Не удается войти</p>
     <input type="text" class="form__input form__login" name="form__login" autofocus="autofocus" autocomplete="off" autocapitalize="off" minlength="6" maxlength="100" placeholder="E-mail" tabindex="1" required spellcheck="false">
     <br>
