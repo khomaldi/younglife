@@ -842,7 +842,7 @@ img {
 }
 
 .info__message_success {
-  display: block;
+  display: none;
   padding: 20px 5px;
   width: 100%;
   height: 100%;
@@ -857,7 +857,7 @@ img {
 }
 
 .info__message_wrong {
-  display: block;
+  display: none;
   padding: 20px 5px;
   width: 100%;
   height: 100%;
