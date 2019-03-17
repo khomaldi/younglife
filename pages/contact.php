@@ -1,14 +1,6 @@
 <?php
 require_once($_SERVER['DOCUMENT_ROOT'] . '/core/main.php');
 
-//Try to include <mail-sender.php>
-try {
-  if (!@include_once($rootFolder . 'core/mail/mail-sender.php')) {
-    throw new Exception('Can\'t open file &lt;mail-sender.php&gt;');
-  }
-} catch (Exception $e) {
-  echo $e->getMessage();
-}
 ?>
 <!DOCTYPE html>
 <html lang="ka">
