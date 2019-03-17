@@ -8,7 +8,7 @@ require($_SERVER['DOCUMENT_ROOT'] . '/core/mail/SMTP.php');
 // Настройки
 $mail = new PHPMailer(true);
 
-if (isset($_POST['form-submit']) && !empty($_POST['form-submit'])) {
+if (isset($_POST['send']) && $_POST['phone'] == '') {
   try {
         //Server settings
     $mail->SMTPDebug = 0;                                 // Enable verbose debug output
@@ -23,10 +23,10 @@ if (isset($_POST['form-submit']) && !empty($_POST['form-submit'])) {
     $mail->SetFrom('no-reply@younglife.ge'); // Ваш Email
     $mail->addAddress('admin@younglife.ge'); // Email получателя
 
-    $form_name = htmlentities($_POST['form-name']);
-    $form_email = htmlentities($_POST['form-email']);
-    $form_subject = htmlentities($_POST['form-subject']);
-    $form_textarea = htmlentities($_POST['form-textarea']);
+    $form_name = htmlentities($_POST['name']);
+    $form_email = htmlentities($_POST['email']);
+    $form_subject = htmlentities($_POST['subject']);
+    $form_message = htmlentities($_POST['message']);
     
          // Письмо
     $mail->isHTML(true);
@@ -36,13 +36,14 @@ if (isset($_POST['form-submit']) && !empty($_POST['form-submit'])) {
          <b>Имя отправителя</b>: $form_name <br>
          <b>E-mail</b>: $form_email <br>
          <b>Тема</b>: $form_subject <br>
-         <b>Текст сообщения</b>: $form_textarea";
+         <b>Текст сообщения</b>: $form_message";
 
         // Результат
     $mail->send();
-    echo 'Message has been sent';
   } catch (Exception $e) {
     echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
   }
+} else {
+  echo 'Message could not be sent.';
 }
 ?>
