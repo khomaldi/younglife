@@ -16,3 +16,4 @@ ru/blocks/map/map.js
 ru/blocks/whoweare/whoweare.js
 core/yandex/yandex-metrika.tpl
 core/functions/signup/registration.php
+core/sql.php
