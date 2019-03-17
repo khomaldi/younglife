@@ -18,8 +18,8 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/core/main.php');
 
     <!-- Meta -->
     <meta charset="utf-8">
-    <meta name="keywords" content="Вход, авторизация, YoungLife, young, life, georgia">
-    <meta name="description" content="Вход на сайт YoungLife.ge">
+    <meta name="keywords" content="Регистрация, YoungLife, young, life, georgia">
+    <meta name="description" content="Регистрация на сайте YoungLife.ge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:title" content="Young Life Грузия">
     <meta property="og:image" content="https://younglife.ge/images/og_logo.jpg">
