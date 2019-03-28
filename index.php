@@ -18,10 +18,10 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/core/main.php');
   <meta property="og:image" content="https://younglife.ge/images/og_logo.jpg">
 
 <?php
-//Try to include <includes-head.tpl>
+//Try to include <includes-head.html>
 try {
-  if (!@include_once($rootFolder . 'includes/includes-head.tpl')) {
-    throw new Exception('Can\'t open file &lt;includes-head.tpl&gt;');
+  if (!@include_once($rootFolder . 'includes/includes-head.html')) {
+    throw new Exception('Can\'t open file &lt;includes-head.html&gt;');
   }
 } catch (Exception $e) {
   echo $e->getMessage();
@@ -41,30 +41,30 @@ try {
 }
 ?>
 <?php
-//Try to include <map.tpl>
+//Try to include <map.html>
 try {
-  if (!@include_once($rootFolder . 'blocks/map/map.tpl')) {
-    throw new Exception('Can\'t open file &lt;map.tpl&gt;');
+  if (!@include_once($rootFolder . 'blocks/map/map.html')) {
+    throw new Exception('Can\'t open file &lt;map.html&gt;');
   }
 } catch (Exception $e) {
   echo $e->getMessage();
 }
 ?>
 <?php
-//Try to inclide <banners.tpl>
+//Try to inclide <banners.html>
 try {
-  if (!@include_once($rootFolder . 'blocks/banners/banners.tpl')) {
-    throw new Exception('Can\'t open file &lt;banners.tplgt;');
+  if (!@include_once($rootFolder . 'blocks/banners/banners.html')) {
+    throw new Exception('Can\'t open file &lt;banners.htmlgt;');
   }
  } catch (Exception $e) {
     echo $e->getMessage();
 }
 ?>
 <?php
-//Try to inclide <about.tpl>
+//Try to inclide <about.html>
 try {
-  if (!@include_once($rootFolder . 'blocks/about/about.tpl')) {
-    throw new Exception('Can\'t open file &lt;about.tplgt;');
+  if (!@include_once($rootFolder . 'blocks/about/about.html')) {
+    throw new Exception('Can\'t open file &lt;about.htmlgt;');
   }
  } catch (Exception $e) {
     echo $e->getMessage();

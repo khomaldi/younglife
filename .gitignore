@@ -14,6 +14,7 @@ ru/blocks/events/responsiveslides.js
 ru/blocks/header/header.js
 ru/blocks/map/map.js
 ru/blocks/whoweare/whoweare.js
-core/yandex/yandex-metrika.tpl
+core/yandex/yandex-metrika.html
 core/functions/signup/registration.php
+core/mail/feedback_sender.php
 core/sql.php
