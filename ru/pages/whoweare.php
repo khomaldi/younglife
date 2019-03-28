@@ -18,10 +18,10 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/core/main.php');
   <meta property="og:image" content="https://younglife.ge/images/og_logo.jpg">
 
 <?php
-//Try to include <includes-head.tpl>
+//Try to include <includes-head.html>
 try {
-  if (!@include_once($rootFolder . 'includes/includes-head.tpl')) {
-    throw new Exception('Can\'t open file &lt;includes-head.tpl&gt;');
+  if (!@include_once($rootFolder . 'includes/includes-head.html')) {
+    throw new Exception('Can\'t open file &lt;includes-head.html&gt;');
   }
 } catch (Exception $e) {
   echo $e->getMessage();
@@ -41,10 +41,10 @@ try {
 }
 ?>
 <?php
-//Try to inclide <whoweare.tpl>
+//Try to inclide <whoweare.html>
 try {
-  if (!@include_once($rootFolder . 'ru/blocks/whoweare/whoweare.tpl')) {
-    throw new Exception('Can\'t open file &lt;whoweare.tplgt;');
+  if (!@include_once($rootFolder . 'ru/blocks/whoweare/whoweare.html')) {
+    throw new Exception('Can\'t open file &lt;whoweare.htmlgt;');
   }
  } catch (Exception $e) {
     echo $e->getMessage();

@@ -25,10 +25,10 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/core/main.php');
     <meta property="og:image" content="https://younglife.ge/images/og_logo.jpg">
 
     <?php
-    //Try to include <includes-head.tpl>
+    //Try to include <includes-head.html>
     try {
-      if (!@include_once($rootFolder . 'includes/includes-head.tpl')) {
-        throw new Exception('Can\'t open file &lt;includes-head.tpl&gt;');
+      if (!@include_once($rootFolder . 'includes/includes-head.html')) {
+        throw new Exception('Can\'t open file &lt;includes-head.html&gt;');
       }
     } catch (Exception $e) {
       echo $e->getMessage();
@@ -50,9 +50,9 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/core/main.php');
     }
     ?>
     <?php
- //Try to include <signup.tpl>
+ //Try to include <signup.html>
     try {
-      if (!@include_once($rootFolder . 'ru/blocks/signup/signup.tpl')) {
+      if (!@include_once($rootFolder . 'ru/blocks/signup/signup.html')) {
         throw new Exception('Can\'t open file &lt;signup&gt;');
       }
     } catch (Exception $e) {
