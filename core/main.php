@@ -7,7 +7,6 @@
  * @license none
  * Date: 13.02.2019
  * 
- * This script changes the language based on the page address.
  */
 
 $rootFolder = $_SERVER['DOCUMENT_ROOT'] . '/';
