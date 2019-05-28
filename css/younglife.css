@@ -132,6 +132,11 @@ img {
   opacity: 1;
 }
 
+.navigation__menu li:active .menu__link:before {
+  transform: translate(-50%, 0);
+  opacity: 1;
+}
+
 .menu__link_disable {
   pointer-events: none;
   cursor: default;
@@ -144,18 +149,24 @@ img {
   top: 100%;
   width: 150px;
   padding: 15px 0 15px;
-  margin-top: 5px;
+  margin-top: 10px;
   background: white;
   border-radius: 5px;
   box-shadow: 0 0 30px rgba(0,0,0,.2);
   box-sizing: border-box;
-  visibility: hidden;
+  display: none;
   opacity: 0;
   transform: translate(-50%, 20px);
   transition: .3s;
 }
 
 .navigation__menu li:hover .menu__submenu {
+  display: block;
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+.submenu__link:active .menu__submenu {
   visibility: visible;
   opacity: 1;
   transform: translate(-50%, 0);
@@ -176,6 +187,11 @@ img {
 }
 
 .submenu__link:hover {
+  background: deepskyblue;
+  color: white;
+}
+
+.submenu__link:active {
   background: deepskyblue;
   color: white;
 }
@@ -224,7 +240,7 @@ img {
 
   .navigation__menu li {
     position: relative;
-    margin: 10px 0;
+    margin: 15px 0;
     width: 50%;
     text-align: center;
   }
