@@ -61,7 +61,7 @@ try {
 }
 ?>
 <?php
-//Try to inclide <about.html>
+//Try to include <about.html>
 try {
   if (!@include_once($rootFolder . 'ru/blocks/about/about.html')) {
     throw new Exception('Can\'t open file &lt;about.htmlgt;');
