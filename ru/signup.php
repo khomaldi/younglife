@@ -12,7 +12,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/core/main.php');
 <html lang="ru">
 <head>
     <!-- Title -->
-    <title>Вход</title>
+    <title>Регистрация</title>
     <link rel="alternate" hreflang="ka" href="https://younglife.ge" />
     <link rel="alternate" hreflang="ru" href="https://younglife.ge/ru" />
 
