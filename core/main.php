@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Created by Visual Studio Code.
+ * Created by PHPStorm.
  * @author: Giorgi Khomaldishvili <khomaldi@yandex.ru> <https://github.com/khomaldi>
  * @copyright Copyright (c) 2019, Giorgi Khomaldishvili
  * @license none
