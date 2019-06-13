@@ -1,0 +1,41 @@
+.activation__h1 {
+    font-size: 2em;
+    color: #65CB00;
+    margin: 0;
+    padding: 0;
+}
+
+.activation__h1-wrong {
+    font-size: 2em;
+    color: #d6384a;
+    margin: 0;
+    padding: 0;
+}
+
+.activation__p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.activation__itisnotme {
+    margin-bottom: 190px;
+}
+
+.activation__submit {
+    display: inline-block;
+    margin-top: 40px;
+    background-color: #1c6ba4;
+    text-transform: uppercase;
+    color: white !important;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 12px 17px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.activation__submit:hover {
+    background-color: rgb(28, 107, 164, .8);
+}
