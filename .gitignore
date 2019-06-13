@@ -18,3 +18,4 @@ core/yandex/yandex-metrika.html
 core/sql.php
 core/functions/signup/registration.php
 ru/profile/core/sql.php
+ru/profile/blocks/signup/functions/registration.php
