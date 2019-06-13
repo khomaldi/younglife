@@ -2,8 +2,8 @@
 
 //Try to include <footer.html>
 try {
-  if (!@include_once($rootFolder . 'ru/blocks/footer/footer.html')) {
-    throw new Exception('Can\'t open file <footer.html>');
+  if (!@include_once($_SERVER['DOCUMENT_ROOT'] . 'ru/blocks/footer/footer.html')) {
+    throw new Exception('Can\'t open file &lt;footer.html&tg;');
   }
 } catch (Exception $e) {
   echo $e->getMessage();
